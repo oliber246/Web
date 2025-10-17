@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.contenedor-principal {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.encabezado {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.encabezado h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.encabezado p {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.seccion-perfil {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.contenedor-foto {
+  flex-shrink: 0;
+}
+
+.foto-perfil {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 3px solid #2c3e50;
+}
+
+.marcador-foto {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 4em;
+  font-weight: bold;
+  border: 3px solid #2c3e50;
+}
+
+.informacion-personal {
+  flex: 1;
+}
+
+.informacion-personal h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 10px;
+}
+
+.informacion-personal p {
+  color: #333;
+  line-height: 1.8;
+  text-align: justify;
+  font-size: 1em;
+}
+
+.seccion-contenido {
+  padding: 40px;
+}
+
+.seccion {
+  margin-bottom: 40px;
+}
+
+.titulo-seccion {
+  color: #2c3e50;
+  font-size: 1.8em;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #2c3e50;
+  font-weight: bold;
+}
+
+.subseccion {
+  margin-bottom: 25px;
+}
+
+.titulo-subseccion {
+  color: #34495e;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  font-weight: 600;
+  padding-left: 10px;
+  border-left: 4px solid #3498db;
+}
+
+.lista-items {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  background: #f8f9fa;
+  padding: 12px 20px;
+  margin-bottom: 8px;
+  border-left: 3px solid #3498db;
+}
+
+.item a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 0.95em;
+  display: block;
+}
+
+.pie-pagina {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.pie-pagina p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .seccion-perfil {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .encabezado h1 {
+    font-size: 1.8em;
+  }
+
+  .seccion-contenido {
+    padding: 20px;
+  }
+}
